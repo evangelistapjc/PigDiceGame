@@ -32,7 +32,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     if (playGame) {
         playerScores[whosTurn] += roundScores[whosTurn];
         
-        if (playerScores[whosTurn] >= 10) {
+        if (playerScores[whosTurn] >= 100) {
             playGame = false;
             roundScores[whosTurn] = 0;
             document.querySelector('#current-' + whosTurn).innerHTML = roundScores[whosTurn];
